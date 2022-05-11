@@ -26,7 +26,7 @@ elif y20 < y < y10:
 else:
     print("Не пересекает")
 
-img = np.zeros((512, 512, 3), np.uint)
+img = np.zeros((512, 512, 3), np.uint8)
 
 cv.line(img, (x1, y1), (x2, y2), (255, 0, 0), 2, cv.LINE_8)
 cv.imshow('line', img)
