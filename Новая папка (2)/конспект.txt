@@ -1,3 +1,19 @@
 requirements.txt - файл со всеми библиотеками
 команда для запуска:
 pip install -r requirements.txt
+
+Нейронная сеть это Математическая модель, а также её программное или аппаратное воплощение, построенная по принципу организации и функционирования биологических нейронных сетей - сетей нервных клеток живого организма. 
+
+
+состоит из:
+1. обучение - сбор данных эти данные называются дата центром. пример открытых дататестов: Marketplace – Google Cloud Platform 
+2. тренировка - загрузить дата центр в нейрлсеть и выявление уравнение
+3. тест - загружаем новые фотографии и нааблюдение на сколько хорошо распознаёт объекты
+
+flags.DEFINE_string('framework', 'tf', '(tf, tflite, trt')
+flags.DEFINE_string('video', './data/video/test.mp4', 'path to input video or set to 0 for webcam')
+python object_tracker.py --video 0 --output ./outputs/demo.avi --model yolov4
+аргументы командной строки def main(_argv): Первое из скобок - framework название флага
+все остальное - это какие значения принимает флаг
+
+python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 --video ./data/video/test.mp4 --output ./outputs/tiny.avi --tiny
